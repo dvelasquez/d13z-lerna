@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "lerna:bootstrap": "lerna bootstrap",
-    "lerna:publish": "lerna publish from-git",
-    "lerna:publish:canary": "lerna publish from-git --canary",
     "lerna:release": "lerna version --conventional-commits --yes",
+    "lerna:publish": "lerna publish from-git --yes",
+    "lerna:release:canary": "lerna version --conventional-commits --canary --yes",
+    "lerna:publish:canary": "lerna publish from-git --canary --yes",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "keywords": [],

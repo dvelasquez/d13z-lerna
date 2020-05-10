@@ -17,8 +17,8 @@ release_canary () {
   echo "Releasing new version to NPM"
   git checkout "$TRAVIS_BRANCH"
   git reset --hard
-  npm run lerna:release --yes
-  npm run lerna:publish:canary --yes
+  npm run lerna:release:canary
+  npm run lerna:publish:canary
 }
 
 if [[ "$TRAVIS_BRANCH" = "master" && "$TRAVIS_PULL_REQUEST" = "false" ]]; then
