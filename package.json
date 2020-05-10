@@ -6,7 +6,8 @@
   "scripts": {
     "lerna:bootstrap": "lerna bootstrap",
     "lerna:publish": "lerna publish from-git",
-    "lerna:release": "lerna version --conventional-commits",
+    "lerna:publish:canary": "lerna publish from-git --canary",
+    "lerna:release": "lerna version --conventional-commits --yes",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "keywords": [],
