@@ -8,6 +8,7 @@ setup_git() {
 
 setup_npm() {
   echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
+  npm config set access public
 }
 
 release () {
