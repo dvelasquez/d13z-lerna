@@ -1,0 +1,16 @@
+{
+  "name": "@d13z-lerna/root",
+  "version": "1.0.0",
+  "description": "A test-example playground library for Lerna on github.",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  }
+}

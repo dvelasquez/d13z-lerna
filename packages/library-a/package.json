@@ -1,0 +1,23 @@
+{
+  "name": "@d13z-lerna/library-a",
+  "private": false,
+  "version": "0.0.0",
+  "description": "A test library",
+  "author": "Danilo Velasquez <danilo.velasquez@gmail.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "dependencies": {
+    "@d13z-lerna/library-b": "*"
+  }
+}
