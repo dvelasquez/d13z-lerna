@@ -12,9 +12,5 @@ before_install:
 install:
   - npm ci
   - npm run lerna:bootstrap
-deploy:
-  provider: script
-  script: "bash ci/success.sh"
-  skip_cleanup: true
-  on:
-    branch: build/ci
+after_success:
+  - bash ci/success.sh

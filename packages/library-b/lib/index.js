@@ -1,5 +1,5 @@
 const libraryB = () => {
-    console.log('Library B initialised.')
+    console.log('Library B initialised!')
 }
 
 export { libraryB }
