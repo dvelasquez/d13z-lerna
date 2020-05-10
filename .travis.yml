@@ -6,17 +6,15 @@ cache:
   directories:
     - ~/.nvm
     - node_modules
+before_install:
+  - git remote set-url origin "https://${GITHUB_API_TOKEN}@github.com/dvelasquez/d13z-lerna.git" > /dev/null 2>&1
+  - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
 install:
   - npm ci
   - npm run lerna:bootstrap
-before_script:
-  - npm run lerna run prepublish
-before_deploy:
-  - git remote set-url origin "https://${GITHUB_TOKEN}@github.com/dvelasquez/d13z-lerna.git" > /dev/null 2>&1
-  - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
 deploy:
   provider: script
-  script: "lerna:release:canary && npm run lerna:publish:canary"
+  script: "bash ci/success.sh"
   skip_cleanup: true
   on:
     branch: build/ci
