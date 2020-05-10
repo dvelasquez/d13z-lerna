@@ -1,0 +1,13 @@
+sudo: false
+os: linux
+language: node_js
+node_js: '12'
+cache:
+  directories:
+    - ~/.nvm
+    - node_modules
+install:
+  - npm ci
+  - npm run lerna:bootstrap
+after_success:
+  - bash ci/success.sh

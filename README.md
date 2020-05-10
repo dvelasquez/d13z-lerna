@@ -15,7 +15,14 @@ The following are the steps I've been doing to set up this project, for future r
 7.  Create a new package using `lerna create library-b`
 8.  Rename library in package.json from `library-b` to `@d13z-lerna/library-b`
 9.  Import `@d13z-lerna/library-b` into `@d13z-lerna/library-a` 
-10. Add and script to package.json to run lerna bootstrap `"bootstrap": "lerna bootstrap",`
+10. Add and script to package.json to run lerna bootstrap `"lerna:bootstrap": "lerna bootstrap",`
 11. Now the packages are symlinked and we can use the library-b in the library-a.
 
 ### Travis configuration
+Let's start adding a [.travis.yml](.travis.yml) file in the root folder. Travis will run on every
+push, and if the push is in master and with a tag, it will run `lerna:publish`.
+1. Add [.travis.yml](.travis.yml)
+2. Add a [bash script](ci/success.sh) to execute it when a git tag is pushed to the repository.
+3. Create a new `GITHUB_API_TOKEN` and upload it to travis
+4. Update the test script to `"test": "echo \"Error: no test specified\" && exit 0"` for now 
+(because we don't have tests)
