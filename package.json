@@ -4,8 +4,11 @@
   "description": "A test-example playground library for Lerna on github.",
   "main": "index.js",
   "scripts": {
-    "bootstrap": "lerna bootstrap",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lerna:bootstrap": "lerna bootstrap",
+    "lerna:release": "lerna version --conventional-commits --yes",
+    "lerna:publish": "lerna publish from-git --yes",
+    "lerna:publish:canary": "lerna publish from-git --canary --yes",
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
   "keywords": [],
   "author": "",
