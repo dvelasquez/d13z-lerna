@@ -1,7 +1,7 @@
 {
   "name": "@d13z-lerna/library-a",
   "private": false,
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A test library",
   "author": "Danilo Velasquez <danilo.velasquez@gmail.com>",
   "homepage": "",
@@ -18,6 +18,6 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@d13z-lerna/library-b": "^0.0.6"
+    "@d13z-lerna/library-b": "^0.0.7"
   }
 }
