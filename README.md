@@ -23,6 +23,8 @@ Let's start adding a [.travis.yml](.travis.yml) file in the root folder. Travis 
 push, and if the push is in master and with a tag, it will run `lerna:publish`.
 1. Add [.travis.yml](.travis.yml)
 2. Add a [bash script](ci/success.sh) to execute it when a git tag is pushed to the repository.
-3. Create a new `GITHUB_API_TOKEN` and upload it to travis
-4. Update the test script to `"test": "echo \"Error: no test specified\" && exit 0"` for now 
-(because we don't have tests)
+3. Create a new `GITHUB_API_TOKEN` environment and upload it to travis
+4. Update the test script to `"test": "echo \"Error: no test specified\" && exit 0"` for now (because we don't have tests)
+5. Setup a new `NPM_TOKEN` for travis and upload it
+
+This steps will make travis to release a new version every time you push to master and there is changes, effectively publishing your library.
