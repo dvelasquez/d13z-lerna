@@ -10,6 +10,8 @@
     "lerna:release": "lerna version --conventional-commits --yes",
     "lerna:publish": "lerna publish from-git --yes",
     "lerna:publish:canary": "lerna publish from-git --canary --yes",
+    "lint": "eslint '*/**/*.{js,ts}' --quiet",
+    "lint:fix": "npm run lint --fix",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "keywords": [],
@@ -19,7 +21,10 @@
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "eslint": "^7.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.3",
     "lerna": "^3.20.2",
+    "prettier": "^2.0.5",
     "typescript": "^3.9.2"
   }
 }

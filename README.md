@@ -52,3 +52,12 @@ To avoid having inconsistent code, we can use nice tools like ESLint (static che
 
 1. Add the libraries on the root with `npm install -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin`
 2. Add a [.eslintrc.js](.eslintrc.js) file to the root, this file will have the rules for ESLint
+3. Add the prettier libraries to the root with: `npm install -D prettier eslint-config-prettier eslint-plugin-prettier`
+4. Add a [.prettierrc.js](.prettierrc.js) file to the root. This file will have the formatting rules
+5. Add a new script task to the root [package.json](package.json) to run eslint and prettier:
+```json
+"lint": "eslint '*/**/*.{js,ts}' --quiet",
+"lint:fix": "npm run lint --fix",
+```
+This will run eslint in the specified files. The `lint:fix` variation will try to fix the issues.
+On a CI environment, we should run the lint without fix.
