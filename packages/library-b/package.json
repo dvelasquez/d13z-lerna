@@ -6,15 +6,16 @@
   "author": "Danilo Velasquez <danilo.velasquez@gmail.com>",
   "homepage": "",
   "license": "MIT",
-  "main": "lib/index.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
+  "main": "./dist/index.js",
+  "types":  "./dist/index.d.ts",
   "files": [
-    "lib"
+    "dist"
   ],
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.2"
   }
 }
