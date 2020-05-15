@@ -50,4 +50,5 @@ Once we have the automatic release of our project, we will start adding some coo
 
 To avoid having inconsistent code, we can use nice tools like ESLint (static checking) and Prettier (styling).
 
-1. Let's add the libraries on the root with `npm install -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin`
+1. Add the libraries on the root with `npm install -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin`
+2. Add a [.eslintrc.js](.eslintrc.js) file to the root, this file will have the rules for ESLint
