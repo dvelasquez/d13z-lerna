@@ -44,3 +44,10 @@ Once we have the automatic release of our project, we will start adding some coo
 4. Add a new `tsconfig.json` in `library-a` and `library-b` will extend the root one, [like this](packages/library-a/tsconfig.json)
 5. Add a new `build` script in each [package.json](packages/library-a/package.json) which will run the typescript compilation `"build": "tsc"`
 6. Add a new `build` script in the root [package.json](package.json) that runs the following command `"lerna:build": "lerna run build"`, this will run the command in every package
+7. Update [.travis.yml](.travis.yml) to execute the build step
+
+### Adding ESLint to catch code style issues
+
+To avoid having inconsistent code, we can use nice tools like ESLint (static checking) and Prettier (styling).
+
+1. Let's add the libraries on the root with `npm install -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin`
