@@ -44,3 +44,24 @@ Once we have the automatic release of our project, we will start adding some coo
 4. Add a new `tsconfig.json` in `library-a` and `library-b` will extend the root one, [like this](packages/library-a/tsconfig.json)
 5. Add a new `build` script in each [package.json](packages/library-a/package.json) which will run the typescript compilation `"build": "tsc"`
 6. Add a new `build` script in the root [package.json](package.json) that runs the following command `"lerna:build": "lerna run build"`, this will run the command in every package
+7. Update [.travis.yml](.travis.yml) to execute the build step
+
+### Adding ESLint to catch code style issues
+
+To avoid having inconsistent code, we can use nice tools like ESLint (static checking) and Prettier (styling).
+
+1. Add the libraries on the root with `npm install -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin`
+2. Add a [.eslintrc.js](.eslintrc.js) file to the root, this file will have the rules for ESLint
+3. Add the prettier libraries to the root with: `npm install -D prettier eslint-config-prettier eslint-plugin-prettier`
+4. Add a [.prettierrc.js](.prettierrc.js) file to the root. This file will have the formatting rules
+5. Add a new script task to the root [package.json](package.json) to run eslint and prettier:
+
+```json
+"lint": "eslint '*/**/*.{js,ts}' --quiet",
+"lint:fix": "npm run lint --fix",
+```
+
+This will run eslint in the specified files. The `lint:fix` variation will try to fix the issues.
+On a CI environment, we should run the lint without fix.
+
+6. Update [.travis.yml](.travis.yml) to execute the lint step
