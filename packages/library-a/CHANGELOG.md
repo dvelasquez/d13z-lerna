@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.1.0](https://github.com/dvelasquez/d13z-lerna/compare/@d13z-lerna/library-a@0.0.7...@d13z-lerna/library-a@0.1.0) (2020-05-15)
+
+
+### Features
+
+* **testing-stuff:** added changes to library a to test changes. ([#2](https://github.com/dvelasquez/d13z-lerna/issues/2)) ([b480688](https://github.com/dvelasquez/d13z-lerna/commit/b480688975cde6821f50646a213fd36346a880e9))
+
+
+
+
+
 ## 0.0.7 (2020-05-14)
 
 **Note:** Version bump only for package @d13z-lerna/library-a

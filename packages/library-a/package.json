@@ -1,7 +1,7 @@
 {
   "name": "@d13z-lerna/library-a",
   "private": false,
-  "version": "0.0.7",
+  "version": "0.1.0",
   "description": "A test library",
   "author": "Danilo Velasquez <danilo.velasquez@gmail.com>",
   "homepage": "",
