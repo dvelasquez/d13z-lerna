@@ -1,13 +1,13 @@
 {
   "name": "@d13z-lerna/library-b",
   "private": false,
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A test library",
   "author": "Danilo Velasquez <danilo.velasquez@gmail.com>",
   "homepage": "",
   "license": "MIT",
   "main": "./dist/index.js",
-  "types":  "./dist/index.d.ts",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],

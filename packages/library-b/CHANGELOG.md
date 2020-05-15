@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.8](https://github.com/dvelasquez/d13z-lerna/compare/@d13z-lerna/library-b@0.0.7...@d13z-lerna/library-b@0.0.8) (2020-05-15)
+
+**Note:** Version bump only for package @d13z-lerna/library-b
+
+
+
+
+
 ## 0.0.7 (2020-05-14)
 
 **Note:** Version bump only for package @d13z-lerna/library-b
