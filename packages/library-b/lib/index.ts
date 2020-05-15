@@ -1,4 +1,4 @@
-const libraryB = () => {
+const libraryB = (): void => {
     console.log('Library B initialised U+1F60E')
 }
 

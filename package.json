@@ -4,6 +4,7 @@
   "description": "A test-example playground library for Lerna on github.",
   "main": "index.js",
   "scripts": {
+    "lerna:build": "lerna run build",
     "lerna:bootstrap": "lerna bootstrap",
     "lerna:release": "lerna version --conventional-commits --yes",
     "lerna:publish": "lerna publish from-git --yes",
@@ -14,6 +15,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "lerna": "^3.20.2"
+    "lerna": "^3.20.2",
+    "typescript": "^3.9.2"
   }
 }
