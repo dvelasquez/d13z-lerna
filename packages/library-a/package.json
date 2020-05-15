@@ -1,7 +1,7 @@
 {
   "name": "@d13z-lerna/library-a",
   "private": false,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A test library",
   "author": "Danilo Velasquez <danilo.velasquez@gmail.com>",
   "homepage": "",
@@ -16,7 +16,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@d13z-lerna/library-b": "^0.0.8"
+    "@d13z-lerna/library-b": "^0.0.9"
   },
   "devDependencies": {
     "typescript": "^3.9.2"
