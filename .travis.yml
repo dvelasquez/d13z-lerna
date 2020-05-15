@@ -11,6 +11,7 @@ before_install:
   - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" >> $HOME/.npmrc 2> /dev/null
 install:
   - npm ci
+  - npm run lint
   - npm run lerna:build
 after_success:
   - bash ci/success.sh
