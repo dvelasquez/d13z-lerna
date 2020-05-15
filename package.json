@@ -4,6 +4,7 @@
   "description": "A test-example playground library for Lerna on github.",
   "main": "index.js",
   "scripts": {
+    "postinstall": "npm run lerna:bootstrap",
     "lerna:build": "lerna run build",
     "lerna:bootstrap": "lerna bootstrap",
     "lerna:release": "lerna version --conventional-commits --yes",
