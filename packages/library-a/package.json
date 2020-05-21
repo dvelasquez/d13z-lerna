@@ -1,7 +1,7 @@
 {
   "name": "@d13z-lerna/library-a",
   "private": false,
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A test library",
   "author": "Danilo Velasquez <danilo.velasquez@gmail.com>",
   "homepage": "",
@@ -21,7 +21,7 @@
     "prebuild": "rimraf dist"
   },
   "dependencies": {
-    "@d13z-lerna/library-b": "^0.0.9"
+    "@d13z-lerna/library-b": "^0.0.10"
   },
   "devDependencies": {
     "typescript": "^3.9.2"
