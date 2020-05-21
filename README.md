@@ -65,3 +65,19 @@ This will run eslint in the specified files. The `lint:fix` variation will try t
 On a CI environment, we should run the lint without fix.
 
 6. Update [.travis.yml](.travis.yml) to execute the lint step
+
+Now we can keep our environment consistent over time (at least on the way we write the code).
+
+### Adding rollup to package stuff better
+
+Rollup is a very good bundler, specially for libraries. So we are going to install it and make
+Rollup handle the bundling instead of TypeScript. This is useful if you are going to add more
+libraries to the mix or styles.
+
+1. Install rollup in the root of the project with `npm install -D rollup`
+2. Install the other libraries `npm install -D @rollup/plugin-alias rollup-plugin-analyzer @rollup/plugin-typescript @rollup/plugin-commonjs @rollup/plugin-node-resolve @rollup/plugin-replace rollup-plugin-terser`
+3. Create a rollup directory [rollup](./rollup) this directory will hold the base rollup config
+4. Create the [base config](./rollup/rollup.base.config.js) with the base configurations.
+5. Install the following dependencies to manage some minor cleaning stuff `npm install -D cpx rimraf`
+6. Change the scripts of the libraries to [match this](./packages/library-a/package.json)
+7. Create a `tsconfig.d.json`, [this](./packages/library-a/tsconfig.d.json) will be used only to generate the type definitions
