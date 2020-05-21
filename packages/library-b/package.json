@@ -6,13 +6,19 @@
   "author": "Danilo Velasquez <danilo.velasquez@gmail.com>",
   "homepage": "",
   "license": "MIT",
-  "main": "./dist/index.js",
+  "module": "./dist/index.esm.js",
+  "main": "./dist/index.umd.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "npm run build:dist && npm run build:types && npm run copy:types",
+    "build:dist": "rollup -c",
+    "build:types": "cross-env NODE_ENV=production tsc --project tsconfig.d.json",
+    "copy:types": "cpx \"src/types/**/*\" dist/types",
+    "start": "rollup -c -w",
+    "prebuild": "rimraf dist",
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "devDependencies": {
