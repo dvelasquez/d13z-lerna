@@ -39,7 +39,7 @@ export default (
         mainFields: ['module', 'main'], // Since the target of this is ESM, we will prioritise modules, and then main
         extensions: extensions, // List of extensions of files to be included
       }),
-      minify && terser({module:true, output: { comments: false }}), // If minify is true, the code will be minified
+      minify && terser({ module: true, output: { comments: false } }), // If minify is true, the code will be minified
       analyzer({ summaryOnly: true }), // Useful plugin to check what is using most of the space in the bundle
     ],
   };
@@ -67,7 +67,7 @@ export default (
         extensions: extensions,
       }),
       commonjs(),
-      minify && terser({output: { comments: false }}),
+      minify && terser({ output: { comments: false } }),
       analyzer({ summaryOnly: true }),
     ],
   };
