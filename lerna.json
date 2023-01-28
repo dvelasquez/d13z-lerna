@@ -1,12 +1,12 @@
 {
+  "useWorkspaces": true,
+  "npmClient": "npm",
   "command": {
     "publish": {
       "ignoreChanges": ["ignored-file", "*.md"],
       "message": "chore(release): publish"
     }
   },
-  "packages": [
-    "packages/*"
-  ],
+  "packages": ["packages/*"],
   "version": "independent"
 }
