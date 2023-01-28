@@ -1,12 +1,9 @@
-import path from 'path';
-import rollupBase from '../../rollup/rollup.base.config';
-
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const pkg = require('./package.json');
-const cwd = path.resolve(__dirname);
+import rollupBase from '../../rollup/rollup.base.config.js';
+import pkg from './package.json' assert { type: 'json' };
+import { cwd } from 'process';
 
 const config = rollupBase({
-  cwd,
+  cwd: cwd(),
   entry: 'lib/index.ts',
   libraryName: 'libraryA',
   minify: false,
