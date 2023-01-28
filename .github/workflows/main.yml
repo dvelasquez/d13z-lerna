@@ -3,7 +3,7 @@ on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Node v18 sample
+    name: Build dependencies
     steps:
       - uses: actions/checkout@v3
       - name: Setup node
@@ -12,4 +12,6 @@ jobs:
           node-version: 18
           cache: npm
       - run: npm ci
+      - run: npm run lint
       - run: npm test
+      - run: npm run lerna:build
