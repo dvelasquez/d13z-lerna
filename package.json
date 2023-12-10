@@ -31,7 +31,7 @@
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-prettier": "5.0.1",
     "lerna": "8.0.0",
-    "prettier": "3.1.0",
+    "prettier": "3.1.1",
     "rimraf": "5.0.5",
     "rollup": "4.7.0",
     "rollup-plugin-analyzer": "4.0.0",
