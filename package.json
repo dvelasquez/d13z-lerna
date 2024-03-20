@@ -35,7 +35,7 @@
     "rimraf": "5.0.5",
     "rollup": "4.13.0",
     "rollup-plugin-analyzer": "4.0.0",
-    "typescript": "5.4.2"
+    "typescript": "5.4.3"
   },
   "volta": {
     "node": "20.11.1"
