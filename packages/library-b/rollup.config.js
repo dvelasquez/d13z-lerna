@@ -1,5 +1,5 @@
 import rollupBase from '../../rollup/rollup.base.config.js';
-import pkg from './package.json' assert { type: 'json' };
+import pkg from './package.json' with { type: 'json' };
 import { cwd } from 'process';
 
 const config = rollupBase({
