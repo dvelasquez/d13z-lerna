@@ -9,14 +9,16 @@
     "lerna:release": "lerna version --conventional-commits --yes",
     "lerna:publish": "lerna publish from-git --yes",
     "lerna:publish:canary": "lerna publish from-git --canary --yes",
-    "lint": "eslint '*/**/*.{js,ts}' --quiet",
-    "lint:fix": "npm run lint -- --fix",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "@eslint/eslintrc": "3.1.0",
+    "@eslint/js": "9.14.0",
     "@rollup/plugin-alias": "5.1.1",
     "@rollup/plugin-commonjs": "28.0.1",
     "@rollup/plugin-node-resolve": "15.3.0",
