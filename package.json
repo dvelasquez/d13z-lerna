@@ -18,7 +18,7 @@
   "license": "MIT",
   "devDependencies": {
     "@eslint/eslintrc": "3.3.1",
-    "@eslint/js": "9.38.0",
+    "@eslint/js": "9.39.0",
     "@rollup/plugin-alias": "6.0.0",
     "@rollup/plugin-commonjs": "29.0.0",
     "@rollup/plugin-node-resolve": "16.0.3",
@@ -29,7 +29,7 @@
     "@typescript-eslint/parser": "8.46.2",
     "cpx2": "8.0.0",
     "cross-env": "10.1.0",
-    "eslint": "9.38.0",
+    "eslint": "9.39.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-prettier": "5.5.4",
     "lerna": "9.0.0",
