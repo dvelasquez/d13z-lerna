@@ -35,7 +35,7 @@
     "lerna": "9.0.3",
     "prettier": "3.7.4",
     "rimraf": "6.1.2",
-    "rollup": "4.53.3",
+    "rollup": "4.53.4",
     "rollup-plugin-analyzer": "4.0.0",
     "typescript": "5.9.3"
   },
