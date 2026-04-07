@@ -27,7 +27,7 @@
     "@rollup/plugin-typescript": "12.3.0",
     "@typescript-eslint/eslint-plugin": "8.58.0",
     "@typescript-eslint/parser": "8.58.0",
-    "cpx2": "8.0.1",
+    "cpx2": "8.0.2",
     "cross-env": "10.1.0",
     "eslint": "10.2.0",
     "eslint-config-prettier": "10.1.8",
